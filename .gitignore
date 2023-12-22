@@ -1,0 +1,5 @@
+db.sqlite3
+venv
+CheckSoliq/migrations
+PaymentSoliq/migrations
+UserSoliq/migrations
