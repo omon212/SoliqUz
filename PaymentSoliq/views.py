@@ -23,20 +23,6 @@ class AddCard(APIView):
         else:
             return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
 
-# class AddMoney(APIView):
-#     serializer_class = AddMoneySerializer
-#     queryset = UserCard.objects.all()
-#     @swagger_auto_schema(request_body=AddMoneySerializer)
-#     def update(self,request):
-#         pul_yuborilgan_karta = request.data['card_number']
-#         money = request.data['money']
-#         carta = UserCard.objects.get(card_number=pul_yuborilgan_karta)
-#
-#         for i in carta:
-#             oldingi_pul = i.money
-#             hamme_pul = oldingi_pul + money
-#             saver = UserCard.objects.filter(card_number=pul_yuborilgan_karta).update(money=hamme_pul)
-#         return Response({'message':'Money added'},status=status.HTTP_201_CREATED)
 
 from rest_framework.generics import UpdateAPIView
 
