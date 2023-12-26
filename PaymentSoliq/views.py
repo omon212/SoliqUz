@@ -54,6 +54,9 @@ class AddMoney(UpdateAPIView):
         except UserCard.DoesNotExist:
             return Response({'error': 'Card not found'}, status=status.HTTP_404_NOT_FOUND)
 
+
+
+
         oldingi_pul = carta.money
         hamme_pul = oldingi_pul + money
         carta.money = hamme_pul
