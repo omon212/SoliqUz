@@ -3,3 +3,4 @@ venv
 CheckSoliq/migrations
 PaymentSoliq/migrations
 UserSoliq/migrations
+
